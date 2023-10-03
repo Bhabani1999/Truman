@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0A0A0A;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.column {
+    flex: 1;
+    box-sizing: border-box;
+    color: #FFFFFF;
+}
+
+.column.middle {
+    flex: 0 0 calc(100% - 46px);
+    max-width: 648px;
+    position: relative;
+    overflow-y: auto;
+    padding: 26px;
+}
+
+.column.middlepost {
+    flex: 0 0 calc(100% - 46px);
+    max-width: 760px;
+    position: relative;
+    overflow-y: auto;
+    padding: 26px;
+}
+
+@media (max-width: 724px) {
+    .container {
+        justify-content: center;
+    }
+
+    .column.middle {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Apply typography styles */
+h1.title, h2.heading-md, p.para, span.number, h3.accent-heading {
+    font-size: 15px;
+    text-decoration: none;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0;
+    line-height: 26px;
+    margin: 0;
+}
+
+h1.title {
+    font-size: 43.35px;
+    line-height: 52px;
+}
+
+h2.heading-md {
+    font-size: 25.5px;
+    line-height: 39px;
+}
+
+span.number {
+    font-family: "Spline Sans Mono", monospace;
+    font-size: 13px;
+}
+
+h3.accent-heading
+{font-family: "Spline Sans Mono", monospace;
+    font-size: 15px;
+}
+
+/* Define color classes */
+.type {
+    color: #F3F3F3;
+}
+
+.type-opacity-50 {
+    color: rgba(243, 243, 243, 0.5);
+}
+
+.accent {
+    color: #E3623A;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+.sidebyside{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+/* Add styling for left and right content within the row */
+.left-content {
+    flex-grow: 1;
+}
+
+.right-content {
+    margin-left: 13px;
+}
+
+/* Remove default link styling */
+a {
+    font-size: 15px;
+    text-decoration: none;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0;
+    line-height: 26px;
+    color: #F3F3F3;
+    transition: text-decoration 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Sticky left column */
+.column.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    align-items: flex-start;
+    position: sticky;
+    top: 0;
+    padding: 26px;
+}
+
+.column.right {
+    
+    padding: 26px;
+}
+
+/* Disable overscroll behavior */
+html, body {
+    overscroll-behavior-y: none;
+}
+
+/* Style the "work" and "notes" links */
+.work-link:hover,
+.notes-link:hover {
+    cursor: pointer; /* Change cursor to pointer on hover */
+    text-decoration: underline; /* Underline the text on hover */
+}
+/* Add this CSS to your stylesheet */
+.hidden {
+    display: none;
+  }
+  
+
+  .icon {
+    font-size: 43.35px;
+    line-height: 52px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0;
+    margin: 0;
+}
+
+
+/* CSS */
+#backToTopContainer {
+    display: none;
+    opacity: 0; /* Start with opacity 0 */
+    transition: opacity 0.3s ease, display 0.3s ease; /* Add transitions for opacity and display */
+}
+
+/* CSS for post.js modifications */
+.image-container {
+    max-width: 100%; /* Ensure the container doesn't exceed its parent's width */
+    margin: 0 auto; /* Center the image horizontally within the container */
+}
+
+.image {
+    max-width: 100%; /* Make the image fit the width of its container */
+    height: auto; /* Preserve the aspect ratio of the image */
+}
+
+.top-padding-13 {
+    padding-top: 13px;
+}
+
+.bottom-padding-13 {
+    padding-bottom: 13px;
+}
+
+.top-padding-26 {
+    padding-top: 26px;
+}
+
+.bottom-padding-26 {
+    padding-bottom: 26px;
+}
+
+.block{
+    display: block;
+}
+.sidebyside {
+    flex-direction: row;
+}
+
+/* Hide the loading container by default */
+#loading-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loading-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+  
+  /* hide when it's loading */
+  .loading {
+    display: none;
+
+  }
+  
+  .loading-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  

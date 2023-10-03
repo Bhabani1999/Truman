@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="loading-container">
+        <div><p class="loading-text type para">fetching content</p>
+            <p class="loading-text type-opacity-50 para">'sometimes it takes a few seconds.'</p></div>
+        
+    </div>
+    <div class="container" id="postContainer">
+       
+        <div class="column left">
+           
+                <div class="top-container">
+                    
+                    <div class="nav-container">
+                        <p class="para type work-link" onclick="scrollToSection('work')">work</p>
+                        <p class="para type notes-link" onclick="scrollToSection('notes')">notes</p>    
+                    </div>
+                </div>
+                <div class="bottom-container">
+                    <div class="social-links-container">
+                        <p class="para type"><a href="https://www.linkedin.com/in/bhabanismoh/" target="_blank">linkedin</a></p>
+                        <p class="para type"><a href="https://twitter.com/smbhabani" target="_blank">twitter</a></p>
+                    </div>
+                    <p class="para type-opacity-50">last updated on 12.04.36</p>
+                </div>
+            
+        </div>
+        <div class="column middle">
+           
+            
+            <p class="para type"> <span class="accent">✦ </span>         Hi, I am Bhabani Shankar. I have founded a startup and product designed for Sprinklr in the past. This site is a lifelong compilation of my work and thoughts.</p>
+            
+            <!-- Include your content here -->
+            
+            <div style="height: 39px;"></div>
+        </div>
+        <div class="column right">
+            <!-- Right column content goes here -->
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
